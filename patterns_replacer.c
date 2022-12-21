@@ -2,6 +2,14 @@
 #include "text.h"
 #include "commands.h"
 
+/**
+ * replacement - replaces paterns with strings
+ * @info: info
+ * @index: index replacememt will start from
+ * @string: string to use for replacement
+ * Return: replaced string
+ */
+
 char *replacement(general_t *info, int *index, char *string)
 {
 	char *tmp;
@@ -21,6 +29,13 @@ char *replacement(general_t *info, int *index, char *string)
 
 	return (tmp);
 }
+
+/**
+ * replace_env - replaces environmental variable
+ * @info: info
+ * @environment: environment varaiable to use for replacement
+ * Return: replaced env
+ */
 
 char *replace_env(general_t *info, char *environment)
 {
